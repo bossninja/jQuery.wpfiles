@@ -1,0 +1,21 @@
+jQuery.wpfiles
+==============
+
+This is a simple jQuery plugin designed to give developers using wordpress a simple and non destructive way to utilize the wordpress file manage/upload interface.
+
+Example Use:
+============
+
+the following example simply attaches the functionality available in the wp_editor to any element when it's clicked. The anonymous function passed into the plugin will be called upon selection of a file. By default it will look for an input field with a name equal to the rel attribute of the button.
+
+<script>
+  jQuery(window).ready(function($){
+    $('.wpfile').wpfiles(function(filename){
+      console.log(this);
+      console.log(filename);
+    });
+  });
+</script>
+
+<input type="text" name="images[0]" value="" />
+<button class="wpfile" rel="images[0]"> Choose File </button>
