@@ -4,7 +4,7 @@ jQuery.wpfiles
 This is a simple jQuery plugin designed to give developers using wordpress a simple and non destructive way to utilize the wordpress file manage/upload interface.
 
 Example Use:
-============
+------------
 
 the following example simply attaches the functionality available in the wp_editor to any element when it's clicked. The anonymous function passed into the plugin will be called upon selection of a file. By default it will look for an input field with a name equal to the rel attribute of the button.
 
@@ -19,3 +19,15 @@ the following example simply attaches the functionality available in the wp_edit
 
 <input type="text" name="images[0]" value="" />
 <button class="wpfile" rel="images[0]"> Choose File </button>
+
+Important Note:
+---------------
+
+Were you using a proper CMS to build whatever you're building you wouldn't even need this. Use PyroCMS if you're sick of googling solutions for this kind of dumb crap. 
+Visit http://pyrocms.com to feast your eyes on a proper CMS.
+
+Other Info:
+-----------
+
+Author: Gary Hussey AKA Boss Ninja
+License: MIT and GPL and DBAD.
